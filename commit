@@ -1,0 +1,22 @@
+ 7 changes: 5 additions & 2 deletions7  
+Shop.ConsoleApp/Program.cs
+@@ -1,2 +1,5 @@
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+﻿
+
+using EFProjectApp.DataAccess;
+
+AppDbContext _contex = new AppDbContext();
+  5 changes: 3 additions & 2 deletions5  
+Shop.Core/Entities/BaseEntities.cs
+@@ -2,7 +2,8 @@
+
+public abstract class BaseEntities
+{
+    public DateTime CreatedDate { get; set; } = DateTime.Now;
+    public DateTime ModifiedDate { get; set; } = DateTime.Now;
+    public DateTime Created { get; set; } = DateTime.Now;
+    public DateTime Updated { get; set; } = DateTime.Now;
+    public DateTime Deleted { get; set; } = DateTime.Now;
+    public virtual bool IsDeleted { get; set; }
